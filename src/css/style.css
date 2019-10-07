@@ -1,0 +1,110 @@
+/* Start Login */
+
+.txt-login{
+    /*-fx-text-fill: white;*/ 
+    -fx-font-size: 14px;
+    -fx-focus-traversable: true;
+    -fx-faint-focus-color: #f3a978;
+    -fx-background-insets: 1, 2;
+
+    /*-fx-prompt-text-fill:black;*/
+    /*-fx-effect: dropshadow( three-pass-box, red , 10.0, 0.0,0.0,0.0);*/
+}
+.txt-login:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-border:rgba(255,0,0,0.2); /* here rgba (corrected) */
+}
+.btn-cnx{
+    -fx-background-color: #546070; 
+    -fx-border-radius: 0px;
+}
+
+.btn-cnx:hover{
+    -fx-background-color: #f3a978; 
+    -fx-text-fill: #546070;
+    -fx-font-weight: bold;
+    -fx-border-radius: 0px;
+}
+/* End Login */
+/* Start Employe */
+/* Start Top */
+.txt-title{
+    -fx-font-weight: bold;
+}
+/* End Top */
+/* Start Right */
+.btn-menu{
+    -fx-background-color: #546070;
+    -fx-text-fill: #f3a978;
+    -fx-font-weight: bold;
+    -fx-border-radius: 0px;
+}
+.btn-menu:hover{
+    -fx-background-color: #f3a978;
+    -fx-text-fill: #546070;
+    -fx-border-color: #546070;
+    -fx-border-width: 2 ; 
+}
+/* End Right */
+/* Start Center*/
+.div-center{
+    -fx-background-color: #414d5b;
+}
+.lab-var{
+    -fx-text-fill: #f3a978; 
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-margin: 10px;
+    -fx-background-insets: 1, 2;
+    -fx-fill: #f3622d;
+    -fx-prompt-text-fill:white;
+}
+.btn-crud{
+    -fx-padding: 10px;
+    -fx-background-color: #f3a978;
+    -fx-text-fill: #546070;
+    -fx-font-weight: bold;
+    -fx-border-radius: 0px;
+}
+.btn-crud:hover{
+    -fx-background-color: #546070;
+    -fx-text-fill: #f3a978;
+}
+.txt-input{
+    -fx-text-fill: white; 
+    -fx-font-size: 14px;
+    -fx-focus-traversable: true;
+    -fx-faint-focus-color: #f3a978;
+
+    /*-fx-prompt-text-fill:black;*/ 
+    /*-fx-effect: dropshadow( three-pass-box, red , 10.0, 0.0,0.0,0.0);*/
+}
+.txt-input:focused{
+    -fx-faint-focus-color: transparent;
+    -fx-border:rgba(255,0,0,0.2); /* here rgba (corrected) */
+}
+.table-view{
+    -fx-background-color: #414d5b;
+}
+.table-row-cell:filled:selected { 
+  -fx-background: black;
+  /*// khdar k7al*/ 
+  -fx-background-color: #7CFC00, red;
+  -fx-background-insets: 0, 0 0 1 0 ;
+  -fx-table-cell-border-color: derive(yallow, 5%);
+}
+.table-row-cell:odd:filled:selected {
+  -fx-background: #7CFC00 ;
+}
+
+/*.table-row-cell:filled:selected { 
+  -fx-background: -fx-control-inner-background ;
+  -fx-background-color: -fx-table-cell-border-color, -fx-background ;
+  -fx-background-insets: 0, 0 0 1 0 ;
+  -fx-table-cell-border-color: derive(-fx-color, 5%);
+}
+.table-row-cell:odd:filled:selected {
+  -fx-background: -fx-control-inner-background-alt ;
+}*/
+/* End Center */
+/* End Employe */

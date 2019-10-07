@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AR.ChartController">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <SplitPane dividerPositions="0.5, 0.5, 0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+              <items>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                  <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <items>
+                        <Group>
+                           <children>
+                              <PieChart fx:id="pieChart1" prefHeight="333.0" prefWidth="457.0" />
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <BarChart fx:id="barChart" prefHeight="333.0" prefWidth="317.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" fx:id="xAxes" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="yAxes" side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </Group>
+                     </items>
+                  </SplitPane>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                     <children>
+                        <Label text="Label" />
+                        <PieChart />
+                     </children>
+                  </VBox>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

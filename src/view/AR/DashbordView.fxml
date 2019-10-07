@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpEmploye" maxWidth="1.7976931348623157E308" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefWidth="800.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AR.DashboardController">
+   <top>
+      <HBox style="-fx-background-color: #f3a978;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../image/user1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="title" contentDisplay="CENTER" prefHeight="60.0" style="-fx-font-family: bold;" styleClass="txt-title" text="تسيير الموظفين" textAlignment="CENTER" textFill="#414d5b">
+               <HBox.margin>
+                  <Insets left="65.0" top="45.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox spacing="6.0" style="-fx-background-color: #f3a978;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnEmploye" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnEmploye" prefHeight="60.0" styleClass="btn-menu" text="الموظفون">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnProfil" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnProfil" prefHeight="60.0" styleClass="btn-menu" text="الوظاءف" />
+            <Button layoutX="10.0" layoutY="76.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnEtablissement" prefHeight="60.0" styleClass="btn-menu" text="المؤسسة" />
+            <Button fx:id="btnProfil11" layoutX="10.0" layoutY="142.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnEtudiant" prefHeight="60.0" styleClass="btn-menu" text="التلاميذ" />
+            <Button fx:id="btnProfil111" layoutX="10.0" layoutY="208.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnRechercheEtudiant" prefHeight="60.0" styleClass="btn-menu" text="بحث على الطالب" />
+            <Button fx:id="btnChart" layoutX="10.0" layoutY="274.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnChart" prefHeight="60.0" styleClass="btn-menu" text="رسومات مبيانية" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vbEmploye" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
